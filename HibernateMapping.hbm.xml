@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+<!-- The main tag is the hibernate-mapping container -->  
+ <hibernate-mapping>  
+ 
+ <!-- The class includes the name of the class that will be mapped and the table in the 
+      database that is being mapped to -->
+  <class name="pkg360.practice.Book" table="BOOKS"> 
+   
+   	<!--This maps the ID property to the ID column in the database. This will be the
+   	    primary key for the database. The generator subelement determines how Hibernate
+   	    will generate the key value. --> 
+    <id name="id" type="int" column'"ID">  
+     <generator class="increment"></generator>  
+    </id>  
+    
+    <!--This maps the rest of the properties to the appropriate columns -->         
+    <property name="pages" type="int" column="PAGES"></property>  
+    <property name="firstEd" type="boolean" column="FIRSTED"></property> 
+    <property name="title" type="string" column="TITLE"></property> 
+    <property name="author" type="string" column="AUTHOR"></property>  
+            
+  </class>  
+            
+ </hibernate-mapping>
