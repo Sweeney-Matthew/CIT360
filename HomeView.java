@@ -9,19 +9,14 @@ package pkg360.practice;
  *
  * @author Matthew
  */
-public class BookView implements View{
+public class HomeView implements View{
     
     @Override
     public void display(){
-        
     System.out.println("********************************\n" +
-                         "Booklist\n" +
+                         "Welcome to book database\n" +
                          "********************************");
+    System.out.println("1 for Stocklist and 2 for Out of stock items.");
+    }
     
-      System.out.println("A Farewell to Arms, Ernest Hemingway");
-      System.out.println("As I Lay Dying, William Faulkner");
-      System.out.println("Ulysses, James Joyce");
-      System.out.println("The Hobbit, J R R Tolkien");
-      System.out.println("Dune, Frank Herbert");
-   }
 }
